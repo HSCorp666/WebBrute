@@ -48,7 +48,7 @@ def main():
         flogin = (uname, password)
         BruteForce = requests.get(URL, auth=flogin)
 
-        print('<~~~~~~~~~~', password, '~~~~~~~~~~>')
+        print('Trying password:', password)
 
         if BruteForce:
             print(BruteForce.text)
